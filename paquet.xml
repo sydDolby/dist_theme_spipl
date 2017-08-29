@@ -1,0 +1,17 @@
+<paquet
+	prefix="dist_theme_spipl"
+	categorie="theme"
+	version="1.0.0"
+	etat="stable"
+	compatibilite="[3.1.0-dev;3.2.*]"
+	logo="vignette.png"
+>
+
+	<nom>SpipL dist</nom>
+
+	<auteur>SydDolby</auteur>
+	<credit lien="">Automattic</credit>
+	<licence>GPL v3</licence>
+
+	<utilise nom="dist" compatibilite="];[" />
+</paquet>

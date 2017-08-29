@@ -1,0 +1,106 @@
+/*
+	variante neodist penscratch
+	auteur b_b
+*/
+
+/* Variables */
+$backgroundPage: none;
+$largeurPage: 960px;
+
+body { 
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; 
+	//color: #444; 
+	background: $backgroundPage; }
+.page { 
+	//padding: 3em 6em; 
+	padding: 2em 0 0 0;
+	background: #fff; 
+	width: $largeurPage;
+	max-width: 100%;
+	box-shadow: none; 
+}
+.aside {
+	h2 {
+		font-size: 1em;
+	}
+	li {
+		margin: 3px 0;
+	}
+	.formulaire_recherche {
+		border-top: none;
+		label {
+			color: rgb(153, 153, 153);
+		}
+		input {
+		&.text {
+			border:solid 1px #ddd;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			border-radius: 2px;
+		}
+	}
+}
+
+}
+.header {
+	.spip_logo_site {
+		font-size: 2em;
+	}
+	.spip_logo_site {
+		a,
+		a:hover {
+			font-weight: 700;
+		}
+		a:hover {
+			color: #838383;
+		}
+	} 
+}
+
+
+/* Corrections variante.css */
+.page_mot .aside .menu ul li,
+.page_auteur .aside .menu ul li,
+.page_rubrique .aside .menu_rubriques { display: block; }
+
+/* largeur maximum 1000px */
+@media (max-width: 1000px) {
+	.page { width: auto; max-width: none; padding: 1.5em; margin: 0; }
+}
+/* largeur minimum 769px */
+@media (min-width: 769px) {
+	.wrapper { 
+		float: right;
+		width: 72.5%;
+	}//wrapper
+	.aside { 
+		//float: none; 
+		float: left;
+		//width: auto; 
+		width: 22.5%;
+		margin-right: 5%;
+		overflow: visible;
+		margin-top: 0;
+		div:first-child h2 {
+			border-top: 0;
+			padding-top: 0;
+		}
+		.formulaire_recherche {
+			* {
+				//display: block;
+			}
+			text-align: left;
+			label {
+				display: block;
+				margin-bottom: 5px;
+			}
+			input {
+				&.text {
+					width: 60%;
+					margin-left: 0;
+				}
+			}
+		}//formulaire_recherche 
+	}//aside
+}
+
