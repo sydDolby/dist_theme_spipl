@@ -36,6 +36,9 @@ body {
 .header .spip_logo_site a:hover {
   color: #838383; }
 
+.arbo {
+  display: block; }
+
 /* Corrections variante.css */
 .page_mot .aside .menu ul li,
 .page_auteur .aside .menu ul li,
